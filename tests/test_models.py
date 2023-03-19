@@ -7,7 +7,7 @@ import logging
 import unittest
 from service.models import Account, DataValidationError, db
 from service import app
-from tests.factory import AccountFactory
+from tests.factories import AccountFactory
 
 DATABASE_URI = os.getenv(
     "DATABASE_URI", "postgresql://postgres:postgres@localhost:5432/testdb"
